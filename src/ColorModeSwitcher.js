@@ -20,6 +20,7 @@ const ColorModeSwitcher = props => {
       pos={'fixed'}
       top={4} // here 1 unit = 4px
       right={4}
+      zIndex={'overlay'}
       {...props}
     />
   );
