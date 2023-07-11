@@ -88,10 +88,10 @@ const Videos = () => {
       <VStack w={'full'}>
         <iframe
           src={video.url}
-          // src={'https://www.youtube.com/embed/b50zSyLiCYQ'}
           width={'100%'}
           height={'100%'}
           frameborder="0"
+          title={video.title}
         />
         {/* for video title & description */}
         <VStack alignItems={'flex-start'} p={10} w={'full'}>
@@ -99,6 +99,7 @@ const Videos = () => {
           <Text>{video.description}</Text>
         </VStack>
       </VStack>
+      {/* for video list area at right side */}
       <VStack
         w={['full', 'xl']}
         alignItems={'stretch'}
